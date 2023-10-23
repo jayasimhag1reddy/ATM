@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class ManageAccount {
+public class ManageAccount {
+
+    public void options(){
+
+    }
+
 }
