@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Menu {
     Scanner sc = new Scanner(System.in);
-    private HashMap<String,Account> hm =new HashMap<>();
+    private HashMap<String,AccountDetails> hm =new HashMap<>();
     public void startDisplay(){
        while (true) {
            System.out.println("Type 1:Create Account");
@@ -62,7 +62,7 @@ public class Menu {
         String acc=sc.nextLine();
         System.out.println("Enter your phone number");
         String ph_no=sc.nextLine();
-        hm.put(cust_id,new Account(name,pin,acc,ph_no));
+        hm.put(cust_id,new AccountDetails(name,pin,acc,ph_no));
         System.out.println("Successfully Registered!!");
     }
 }
